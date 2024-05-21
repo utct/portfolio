@@ -6,6 +6,8 @@
 
 body{
     font-family: Arial, sans-serif;
+    color: #261414;
+    
 
 }
 nav{
@@ -18,7 +20,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px; /* Add padding to the entire nav element */
+    padding: 0 20px; 
 }
 .Portfoliotitle{
     font-size: 30px;
@@ -28,15 +30,15 @@ nav{
     Letter-spacing: 1.5px;
     cursor:pointer;
     text-decoration: none;
-    padding-left: 20px; /* Extra padding before the 'Portfolio' */
+    padding-left: 20px; 
 
 }
 
 ul {
     list-style: none;
     display: flex;
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
+    margin: 0; 
+    padding: 0; 
 }
 
 li {
@@ -49,11 +51,35 @@ li a {
     font-size: 18px;
 }
 li:last-child a {
-    padding-right: 40px; /* Extra padding after the 'About' */
+    padding-right: 40px; 
 }
 
 li a:hover {
     color: #ac300e;
-    text-decoration: underline; /* Add underline on hover */
+    text-decoration: underline; 
 
 }
+
+.Home {
+    background-color: #983a3a; 
+    padding: 220px;
+    text-align: left; 
+    padding-left: 60px;
+}
+
+.Home h4 {
+    color: #0d0c0c; 
+    font-size: 18px; 
+}
+
+.Home h1 {
+    color: #261414; 
+    font-size: 32px; 
+    margin-bottom: 10px; 
+}
+
+.Home h3 {
+    color: #1f1d1d; 
+    font-size: 24px; 
+}
+
