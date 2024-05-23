@@ -1,0 +1,35 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: white;
+    color: black;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.title{
+    font-size: larger;
+}
+
+h2, h3 {
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+}
+
+ul {
+    list-style-type: none; 
+    padding: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+p {
+    margin-bottom: 20px;
+}
