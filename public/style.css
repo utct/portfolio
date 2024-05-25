@@ -63,96 +63,110 @@ li a:hover {
 
 li a.active {
     color: #ac300e; 
-    text-decoration: underline
 }
 
 /*------------------Home section------------------*/
 
 .Home {
     background-color: #983a3a; 
-    padding: 350px;
-    text-align: left; 
-    padding-left: 60px;
-    background: url('images/Home1.jpg') ;
-    background-size: cover; /* Ensures the background covers the entire container */
-    z-index: -1;
- 
+    padding: 350px 60px; /* Reduced padding */
+    background: url('images/Home2.png');
+    background-size: cover;
+    
 }
 
-.Home h4 {
-    color: #a20707; 
-    font-size: 18px; 
-}
-
-.Home h1 {
-    color: #656464; 
-    font-size: 32px; 
-    margin-bottom: 10px; 
-}
-
-.Home h3 {
-    color: #656464; 
-    font-size: 24px; 
+@media (max-width: 768px) {
+    .Home {
+        padding: 200px 30px; 
+    }
 }
 
 /*------------------about section------------------*/
-/*------------------about section for student 1------------------*/
 
-.about1 {
+.about {
     width: 100%;
-    padding: 40px 0;
-    padding-top: 140px;
+    padding-top: 100px;
     background-color: rgb(225, 225, 225);
-    display: grid; 
-    place-items: center; 
+    display: flex;
+    justify-content: center;
 }
 
-.about1container {
+.aboutcontainer {
     display: grid; 
-    grid-template-columns: 430px 1fr; 
+    grid-template-columns: 1fr 1fr; 
     gap: 20px; 
     width: 95%;
     max-width: 1130px;
     margin: 0 auto;
 }
 
-.about1 img {
-    width: 100%; 
-    height: auto; 
+.student-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
-.about1-info {
+.about img {
+    width: 150px; 
+    height: 150px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+}
+
+.about-info {
     display: grid; 
-    gap: 20px;
+    gap: 10px;
+    margin-top: 20px; 
 }
 
-.about1-info h2, .about1-info h5, .about1-info p {
+.about-info h2, .about-info h5, .about-info p {
     margin: 0; 
 }
 
-.about1-info h2 {
+.about-info h2 {
     color: rgb(21, 18, 18);
-    font-size: 50px;
+    font-size: 24px;
     text-transform: capitalize;
 }
 
-.about1-info h5 {
+.about-info h5 {
     color: rgb(21, 18, 18);
     letter-spacing: 2px;
-    font-size: 22px;
+    font-size: 18px;
     text-transform: capitalize;
 }
 
-.about1-info p {
+.text-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-info p {
     color: rgb(21, 18, 18);
     letter-spacing: 1px;
-    line-height: 28px;
-    font-size: 18px;
+    line-height: 1.6; 
+    text-align: justify; 
+    font-size: 16px;
+    max-width: 55%; 
+    margin: 0 auto; 
+    margin-top: 5px;
+}
+
+.button-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; 
 }
 
 .button {
+    width: 100%;
+    max-width: 50%; 
     padding: 12px 17px;
-    background-color: #343639; /* Example blue color */
+    background-color: #343639; 
     color: white;
     border: none;
     border-radius: 5px;
@@ -162,64 +176,28 @@ li a.active {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    margin: 0 auto;
+    margin-bottom: 80px;
+    margin-top: 10px;
 }
 
 .button:hover {
-    background-color: #5d5f62; /* Darker blue on hover */
+    background-color: #5d5f62; 
 }
 
-/*------------------about section for student 2------------------*/
 
-.about2 {
-    width: 100%;
-    padding: 40px 0;
-    background-color: rgb(225, 225, 225);
-    display: grid; /* Using grid to layout the section */
-    place-items: center; 
-}
+@media (max-width: 768px) {
+    .aboutcontainer {
+        grid-template-columns: 1fr; 
+    }
 
-.about2container {
-    display: grid; 
-    grid-template-columns: 430px 1fr;
-    gap: 20px; 
-    width: 95%;
-    max-width: 1130px;
-    margin: 0 auto;
-}
+    .about-info p {
+        max-width: 80%; 
+    }
 
-.about2 img {
-    width: 100%; 
-    height: auto; 
-}
-
-.about2-info {
-    display: grid;
-    gap: 20px; 
-}
-
-.about2-info h2, .about2-info h5, .about2-info p {
-    margin: 0; 
-}
-
-.about2-info h2 {
-    color: rgb(21, 18, 18);
-    font-size: 50px;
-    text-transform: capitalize;
-}
-
-.about2-info h5 {
-    color: rgb(21, 18, 18);
-    letter-spacing: 2px;
-    font-size: 22px;
-    text-transform: capitalize;
-}
-
-.about2-info p {
-    color: rgb(21, 18, 18);
-    letter-spacing: 1px;
-    line-height: 28px;
-    font-size: 18px;
+    .button {
+        max-width: 75%; 
+    }
 }
 
 /*------------------skills section------------------*/
@@ -247,23 +225,28 @@ li a.active {
     font-weight: bold;
 }
 
-.skillscard{
+.skillscard {
     width: 328px;
     background-color: white;
-    border-radius: 8px;
     overflow: hidden;
-    margin: 20px;
-
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
 }
 
-.skillscard img{
-    width:100%;
+.skillscard img {
+    width: 80%; 
     height: auto;
+    max-width: 150px; 
+    margin: 0 auto; 
 }
 
-.skillscard-content h2{
-    font-size: 25px;
+.skillscard-content {
+    font-size: 16px;
     margin-bottom: 9px;
+    text-align: center;
+    
 }
 
 /*------------------projects section------------------*/
@@ -283,7 +266,7 @@ li a.active {
 }
 
 .projectsbox {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -327,12 +310,67 @@ li a.active {
 }
 
 .projectscontent .buttonprojects:hover {
-    background-color: #5d5f62; /* Darker blue on hover */
+    background-color: #5d5f62; 
 }
 
+/*------------------email section------------------*/
 
+.email-signup {
+    margin-top: 40px;
+    padding: 40px 20px;
+    text-align: center;
+    margin-bottom: 40px; 
+}
 
+.email-signup h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
 
+.email-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+    margin: 0 auto; 
+}
 
+.email-form input,
+.email-form textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+}
 
+.email-form textarea {
+    height: 100px; 
+}
 
+.email-form button {
+    padding: 12px 17px;
+    font-size: 16px;
+    background-color: #5d5f62;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.email-form button:hover {
+    background-color: #7a7c7f;
+}
+
+/*------------------footer section------------------*/
+
+.footer {
+    background-color: #414141;
+    color: rgb(187, 187, 187);
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1130px;
+    margin: 0 auto;
+}
