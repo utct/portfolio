@@ -3,7 +3,6 @@
     padding: 0px;
 }
 
-
 body{
     font-family: Arial, sans-serif;
     color: #261414;
@@ -37,6 +36,11 @@ body{
 
 .button:hover {
     background-color: #5d5f62; 
+}
+
+.border {
+    border: 2px solid #6b6b6b; 
+    border-radius: 5px; 
 }
 
 /*------------------navigation bar section------------------*/
@@ -148,7 +152,7 @@ li a.active {
 }
 
 .card{
-    width: 325px;
+    width: 360px;
     overflow: hidden;
     padding-inline: 60px;
     font-size: small;
@@ -171,9 +175,12 @@ li a.active {
 /*------------------email section------------------*/
 .email-signup {
     text-align: center;
-    width: 50%;
+    width: 300px;
+    height: 285px;
     margin: 0 auto;
-    margin-bottom: 40px; 
+    background-color: #ebebeb;
+    padding: 20px;
+    border-radius: 5px;
 }
 
 .email-signup h2 {
@@ -193,7 +200,7 @@ li a.active {
 .email-form textarea {
     padding: 10px;
     font-size: 16px;
-    border: 1px solid #ccc; 
+    border: none;
     border-radius: 5px;
 }
 
