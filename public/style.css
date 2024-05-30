@@ -93,16 +93,16 @@ li:last-child a {
 }
 
 li a:hover {
-    color: #808080;
+    color: rgb(194,0,47);
     text-decoration: none;  
 }
 
 /*------------------header section------------------*/
 .Home {
-    padding: 200px;
+    padding: 320px;
     text-align: left; 
     padding-left: 60px;
-    background: url('images/Home2.png') ;
+    background: url('images/Home1.jpg') ;
     background-size: cover;
     z-index: -1;
  
